@@ -1,0 +1,12 @@
+.container{
+    display: flex;
+    height: 570px;
+    border: 10px orange solid;
+}
+.items{
+    width: 100%;
+    height: 570px;
+    color: white;
+    text-align: center;
+    font-size: 70px;
+}

@@ -1,0 +1,20 @@
+body{
+    background-color: #ff7fff;
+}
+.noOverFlow{
+    width: 100px;
+    height: 100px;
+    background-color: #eaeaed;
+    overflow: hidden;
+    display: inline-block;
+}
+.withOverFlow{
+    overflow-y: scroll;
+    height: 50px;
+    font-weight: bold;
+}
+hr{
+    background-color: black;
+    height: 2px;
+    border: 0;
+}

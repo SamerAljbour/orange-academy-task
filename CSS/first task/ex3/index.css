@@ -1,0 +1,14 @@
+body{
+    background-color: #ffc68f;
+    color: #298914;
+}
+#smallImg{
+    float: left;
+    width: 35px;
+    height: 35px;
+    padding-right: 3px;
+}
+#losTXT{
+    color: #4b5085;
+    text-decoration: underline;
+}

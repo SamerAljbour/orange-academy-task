@@ -1,0 +1,463 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #ecf2f4;
+}
+.left{
+    width: 50%;
+}
+.right{
+    display: flex;
+    justify-content: end;
+    width: 50%;
+}
+.container{
+    width: 100%;
+}
+.nav{
+    background-color: #448aff;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 10vh;
+}
+.navPic{
+    width: 4%;
+    height: 3%;
+}
+#leftImage{
+    justify-content: flex-start;
+}
+.profileImg{
+    width: 7%;
+    border-radius: 50%;
+    margin: 0 2%;
+}
+.secondContainer{
+    display: flex;
+    flex-direction: column;
+    width: 94%;
+    margin-left: 3%;
+    height: 90vh;
+}
+.top{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 25%;
+    gap: 20px;
+    margin: 1.5% 0;
+}
+.middle{
+    width: 100%;
+    height: 50%;
+    gap: 2%;
+}
+.bottom{
+    width: 100%;
+    height: 25%;
+    background-color: white;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+.topLeft{
+    width: 33%;
+    height: 100%;
+    background-color: white;
+}
+.topMiddle{
+    width: 33%;
+    height: 100%;
+    background-color:white;
+}
+.rightTop{
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+    background-color:white;
+}
+.topGrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    height: 100%;
+    width: 100%;
+    
+}
+.dashbordIcons{
+    width: 12%;
+    height: 45%;
+    margin: auto;
+}
+.innerflex{
+    display: flex;
+    align-items: center;
+
+}
+.innerText{
+    text-align: center;
+    width: 65%;
+}
+.topCard{
+    width: 100%;
+    height: 40%;
+    background-color: brown;
+    
+}
+.topRightGrid{
+    display: flex;
+    flex-direction: column;
+    grid-template-rows: 1fr;
+    gap: 20px;
+    height: 100%;
+}
+.innergrid{
+    display: grid;
+    grid-template-columns: 25% 75%;
+    height: 100%;
+    background-color: #11c15b;
+}
+.innergrid2{
+    display: grid;
+    grid-template-columns: 25% 75%;
+    height: 100%;
+    background-color: #448aff;
+}
+.rightImages{
+    width: 25%;
+    height: 50%;
+    margin: auto;
+
+}
+.rightText{
+    padding-left: 2%;
+
+    width: 100%;
+    background-color: #32ed80;
+}
+.rightText2{
+    padding-left: 2%;
+
+    width: 100%;
+    background-color: #91baff;
+}
+
+/* setting borders for cards */
+#one{
+    border-right: 1px solid #e2e2e2;
+    border-bottom: 1px solid #e2e2e2;
+}
+#two{
+    border-bottom: 1px solid #e2e2e2;
+}
+#three{
+    border-right: 1px solid #e2e2e2;
+}
+
+/* middle */
+.middle{
+    display: flex;
+    flex-direction: row;
+}
+.leftMiddle{
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.rightMiddle{
+    width: 100%;
+    height: 100%;
+}
+.innerflexMiddle{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+.headDiv{
+    height: 20%;
+    border-bottom: 1px solid #e2e2e2;
+}
+.headicon{
+    margin: auto;
+    margin-right: 1%;
+    width: 3%;
+}
+.leftMiddleText{
+    margin: auto 0;
+}
+.profileIcons {
+    width: 5%;
+    height: 55%;
+    margin: auto 0;
+}
+.arrows {
+    width: 3%;
+    height: 55%;
+    margin: auto  0;
+}
+.members {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 20%;
+    border-bottom: 1px solid #e2e2e2;   
+}
+
+.name{
+    margin: auto;
+    margin-left: 3%;
+    font-size: 1vw;
+}
+.smallLine{
+    background-color: #448aff;
+    height:40%;
+    width: 0.5%;
+    margin-right: 1%;
+    border-radius: 15%;
+}
+.rightMiddle{
+    display: grid;
+    grid-template-columns: 47.5% 47.5%;
+    grid-template-rows: 35% 20% 35%;
+    gap: 5%;
+}
+.card{
+    display: flex;
+    flex-direction: column; 
+    background-color: white;
+    width: 100%;
+
+}
+.redDownArrow{
+    width: 10%;
+    height: 55%;
+}
+.centerTxt{
+    text-align: center;
+    margin: 1% 0;
+    font-size: 1vw;
+}
+.middleCardRed{
+    position: relative;
+    padding-left: 3%;
+    background-color: #ff5252;
+    width: 100%;
+    height: 100%;
+}
+.middleCardGreen{
+    position: relative;
+    padding-left: 3%;
+    background-color: #11c15b;
+}
+.percentage{
+    font-size: 0.8vw;
+    position: absolute;
+    top: 10%;
+    right: 2%;
+    color: white;
+}
+
+.maintext{
+    padding: 2%;
+    font-size: 1vw;
+    color: white;
+}
+/* bottom */
+.bottom{
+    display: flex;
+    flex-direction: row;
+}
+.info{
+    padding: 1%;
+    width: 25%;
+    height: 100%;
+}
+.cardtxt{
+    margin-bottom: 10%;
+}
+input{
+    width: 100%;
+}
+.coloredTxtGreen{
+    font-weight: bold;
+    color: #1cc26c;
+}
+.coloredTxtRed{
+    font-weight: bold;
+    color: #ff5b62;
+}
+/* text decoration */
+select{
+    background-color: transparent;
+    border: 0;
+    color: white;
+    margin-right: 3%;
+}
+.innerText{
+    
+
+}
+.numbers{
+    font-weight: bold;
+    font-size: 1.2vw;
+    color: #5e5a67;
+}
+.innerRighttxt{
+    font-size: 0.8vw;
+    color: #96b7cc  ;
+}
+.rightText{
+    color: white;
+    font-size: 0.8vw;
+    padding: 0.5%;
+}
+.numberright{
+    font-weight: bold;
+    font-size: 1.5vw;
+    color: white;
+}
+.number{
+    font-size: 1vw;
+    margin: auto 0 auto auto;
+}
+
+@media (max-width : 970px){
+    .numbers {
+        font-weight: bold;
+        font-size: 2.3vw;
+        color: #5e5a67;
+    }
+    .innerRighttxt {
+        font-size: 1.3vw;
+        color: #96b7cc;
+    }
+    .numberright {
+        font-weight: bold;
+        font-size: 2vw;
+        color: white;
+    }
+    .rightText {
+        color: white;
+        font-size: 1.3vw;
+        padding: 0.5%;
+    }
+    .name {
+        margin: auto;
+        margin-left: 3%;
+        font-size: 1.4vw;
+    }
+    .number {
+        font-size: 1.2vw;
+        margin: auto 0 auto auto;
+    }
+    .arrows {
+        width: 5%;
+        height: 55%;
+        margin: auto 0;
+    }
+    .profileIcons {
+        width: 7%;
+        height: 55%;
+        margin: auto 0;
+    }
+    .leftMiddleText {
+        font-size: 1.6vw;
+        margin: auto 0;
+    }
+    .headicon {
+        margin: auto;
+        margin-right: 1%;
+        width: 4%;
+    }
+    .centerTxt {
+        text-align: center;
+        margin: 1% 0;
+        font-size: 1.5vw;
+    }
+    .maintext {
+        padding: 2%;
+        font-size: 1.7vw;
+        color: white;
+    }
+    .percentage{
+        font-size: 1vw;
+        position: absolute;
+        top: 10%;
+        right: 2%;
+        color: white;
+    }
+    .cardtxt {
+        margin-bottom: 10%;
+        font-size: 1.7vw;
+    }
+}
+@media (max-width :730px){
+    .secondContainer {
+        display: flex;
+        flex-direction: column;
+        width: 94%;
+        margin-left: 3%;
+        height: 100vh;
+    }
+    .top {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        height: 20%;
+        gap: 20px;
+        margin: 1.5% 0;
+    }
+    
+    
+    .rightMiddle {
+        display: grid;
+        grid-template-columns: 47.5% 47.5%;
+        grid-template-rows: 35% 20% 35%;
+        gap: 5%;
+        margin-bottom: 10%;
+    }
+    .middle {
+        display: flex;
+        flex-direction: column;
+        height: 75%;
+    }
+    .bottom{
+        display: flex;
+        flex-direction: row;
+        height: 10%;
+    }
+}
+@media (max-width:700px){
+    .top {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+        height: 45%;
+        gap: 20px;
+        margin: 1.5% 0;
+    }
+    .topLeft{
+        width: 100%;
+        height: 100%;
+        background-color: white;
+    }
+    .topMiddle{
+        width: 100%;
+        height: 100%;
+        background-color: white;
+    }
+    .rightTop{
+        width: 100%;
+        height: 100%;
+        background-color: white;
+    }
+}

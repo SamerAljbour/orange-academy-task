@@ -1,0 +1,384 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{}
+.upperNav{
+    display: flex;
+    height: 10vh;
+    flex-direction: row;
+    background-color: #f5f5f5   ;
+}
+.icons{
+    width: 3%;
+    height: 34%;
+    margin: 1%;
+}
+.imageContainer{
+    display: flex;
+    flex-direction: row;
+}
+.leftNav{
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+}
+.leftTxt{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: #544c3e;
+    margin-left: 17%;
+}
+.leftIcons {
+    width: 6%;
+    height: 41%;
+    margin: 0 3%;
+}
+.colortext{
+    color: #544c3e;
+}
+.rightContainer{
+    margin-left: auto;
+    height: 10vh;
+    width: 100%;
+}
+.profileIcon{
+    width: 25%;
+}
+.rightflex{
+    display: flex;
+    flex-direction: row;
+    height: 10vh;
+    justify-content: end;
+    align-items: center;
+    margin-right: 12%;
+
+    
+}
+.selectStyle{
+    height: 50%;
+}
+.rightIcons {
+    width: 4%;
+    height: 50%;
+    margin: 0 1%;
+    
+}
+/* top */
+.topContainer{
+    width: 86%;
+    height: 65vh;
+    gap: 1.5%;
+    margin-left: 7%;
+    display: grid;
+    grid-template-columns: 25% 75%;
+    
+}
+.topright{
+    width: 98%;
+}
+.topLeft{
+    width: 100%;
+    color: #f5f5f5;
+}
+.innerNav{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 7vh;
+    margin-bottom: 1%;
+}
+.innerNavIcons1 {
+    width: 7%;
+    height: 50%;
+    margin-right: 1%;
+}
+.innerNavIcons{
+    width: 6%;
+    height: 35%;
+    margin-right: 3%;
+}
+.toRight{
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    width: 50%;
+}
+.toLeft{
+    display: flex;
+    align-items: center;
+}
+.itemHome{
+    margin-right: 10%;
+    text-decoration: none;
+    color: #7fad39;
+    font-weight: bolder;
+    font-size: 1.4vw;
+}
+.smallTXT{
+    font-size: 1vw;
+    color: #9da3ae;
+}
+.coloredTxt{
+    color: #544c3e;
+    font-size: 1.2vw;
+
+}
+.circledImage{
+    background-color: #f5f5f5;
+    border-radius: 50%;
+}
+.numberBold{
+    font-weight: bolder;
+    font-size: 1.2vw;
+}
+.items{
+    margin: 0 10%;
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+    font-size: 1.4vw;
+}
+.whiteSpace{
+
+    width: 100%;
+    height: 10vh;
+}
+
+.search{
+    display: grid;
+    grid-template-columns: 75% 25%;
+    height: 7vh;
+    margin-bottom: 1%;
+
+}
+.innerFlex{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+    justify-content: end;
+    align-items: center;
+}
+.boldText{
+    font-weight: bold;
+    font-size: 1.4vw;
+}
+.selectCat{
+    height: 100%;
+    width: 25%;
+    font-weight: bolder;
+
+}
+.searchInput{
+    height: 100%;
+    width: 50%;
+}
+.searchBtn{
+    width: 25%;
+    height: 100%;
+    border: 0;
+    color: white;
+    font-weight: bolder;
+    background-color: #7fad39;
+}
+.searchLeft{
+    display: flex;
+    flex-direction: row;
+}
+.VegPicture{
+    width: 100%;
+    height: 48vh;
+    background-color:#f5f5f5;
+    display: flex;
+    flex-direction: row;
+}
+.picText{
+    width: 100%;
+    height: 100%;
+    margin: auto 0 auto 25%;
+}
+
+.innercont{
+    margin: auto 0 auto 5%;
+    width: 40%;
+}
+.pic{
+    display: flex;
+    height: 100%;
+    width: 100%;
+
+    justify-content: flex-start;
+}
+.smallText{
+    font-weight: bold;
+    font-size: 0.8vw;
+    margin-bottom: 4%;
+    color: #7fad39;
+}
+.bigBoldText{
+    font-weight: bold;
+    font-size: 2.6vw;
+    width: 100%;
+}
+.free{
+    font-size: 1vw;
+    color: #afaeb0;
+    margin-bottom: 5%;
+}
+.shopNowBtn{
+    background-color: #7fad39;
+    color: white;
+    font-weight: bolder;
+    font-size: 1vw;
+    border: 0;
+    width: 30%;
+    height: 7vh;
+    margin: auto;
+}
+    .depSelect {
+    width: 100%;
+    height: 7vh;
+    border: 0;
+    background-color: #7fad39;
+    color: white;
+    font-weight: bold;
+    text-indent: calc(50% - 60px);
+}
+
+.depSelect > option {
+    background-color: white;
+    color: black;
+    font-size: 1.4vw;
+    padding-left: 50% !important;
+    text-indent: calc(50% - 60px);  
+}
+.bottomContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-top: 1%;
+    width: 86%;
+    height: 35vh;
+    margin-left: 7%;
+    gap: 2%;
+
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3%;
+    width: 100%;
+    background-color: #f5f5f5;
+}
+.vegPictures1{
+    width: 100%;
+}
+
+.paraWhite{
+    background-color: white;
+    color: black;
+    text-align: center;
+    width: 80%;
+    margin-top: 4%;
+    margin-left: 10%; height: 60%;
+    padding-top: 4%;
+}
+.bottomPic{
+
+    height: 75%;
+
+}
+.bottomText{
+
+    height: 25%;
+    width: 100%;
+}
+/* responsive */
+@media (max-width : 835px) {
+    
+    .icons {
+        width: 5%;
+        height: 34%;
+        margin: 1%;
+    }
+    .rightIcons {
+        width: 7%;
+        height: 50%;
+        margin: 0 1%;
+    }
+    .coloredTxt {
+        color: #544c3e;
+        font-size: 1.8vw;
+    }
+    .numberBold {
+        font-weight: bolder;
+        font-size: 1.9vw;
+    }
+    .innerNavIcons {
+        width: 8%;
+        height: 37%;
+        margin-right: 3%;
+    }
+    .innerNavIcons1 {
+        width: 15%;
+        height: 50%;
+        margin-right: 1%;
+    }
+    .items {
+        margin: 0 10%;
+        text-decoration: none;
+        color: black;
+        font-weight: bolder;
+        font-size: 1.8vw;
+    }
+    .itemHome {
+        margin-right: 10%;
+        text-decoration: none;
+        color: #7fad39;
+        font-weight: bolder;
+        font-size: 1.8vw;
+    }
+    .boldText {
+        font-weight: bold;
+        font-size: 1.7vw;
+    }
+    .smallTXT {
+        font-size: 1.4vw;
+        color: #9da3ae;
+    }
+}
+@media (max-width : 771px){
+    .topContainer {
+        width: 86%;
+        height: 73vh;
+        gap: 1.5%;
+        margin-left: 7%;
+        display: grid;
+        flex-direction: column-reverse;
+        /* align-items: center; */
+        /* margin-top: 25%; */
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    .depSelect {
+        width: 100%;
+        height: 7vh;
+        border: 0;
+        background-color: #7fad39;
+        color: white;
+        font-weight: bold;
+        text-indent: calc(50% - 60px);
+        margin-bottom: 0;
+    }
+    .whiteSpace {
+        display: none;
+        width: 100%;
+        height: 10vh;
+    }
+}

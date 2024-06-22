@@ -1,0 +1,679 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+/* nav */
+.helpImg {
+  width: 45%;
+}
+#navColor {
+  background-color: #0093a4;
+  height: 8vh;
+}
+.styleBtn {
+  background-color: #0093a4 !important;
+  border: 1px solid white !important;
+  height: 100%;
+}
+.nav-item > #hoverEffect {
+  color: white;
+  font-size: 1.1vw;
+  margin-left: 1rem;
+}
+#hoverEffect:hover {
+  color: white !important;
+  border-bottom: 2px solid orange; /* Change #000 to your desired color */
+}
+.logo {
+  height: 8vh;
+  width: 90%;
+}
+
+/* home */
+.home {
+  display: flex;
+  flex-direction: row;
+
+  height: 80vh;
+  width: 100%;
+  background-image: url(./images/main\ backgound.jpg);
+  background-size: cover;
+}
+
+.bolderText {
+  font-weight: bold;
+}
+.middleText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+}
+.intro {
+  font-size: 1.5vw;
+  /* margin-bottom:10% ; */
+  text-align: center;
+  color: white;
+}
+.subIntro {
+  font-size: 3vw;
+  text-align: center;
+  /* margin:10% 0; */
+  font-weight: bold;
+  color: white;
+}
+.descIntro {
+  font-size: 2vw;
+  text-align: center;
+  /* margin:10% 0; */
+  color: white;
+}
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+  gap: 3%;
+  margin-bottom: 2.5%;
+}
+.tryBtn {
+  background-color: white;
+  color: black;
+  width: 25%;
+  padding: 1.2%;
+  border: 0;
+  border-radius: 4px;
+}
+.learnBtn {
+  background-color: transparent;
+  color: white;
+  width: 25%;
+  padding: 1.2%;
+  border: 2px solid white;
+  border-radius: 4px;
+}
+.amazonImg {
+  width: 20%;
+}
+.partner {
+  font-size: 1.4vw;
+  text-align: center;
+  /* margin:10% 0; */
+  color: white;
+}
+.musicImage {
+  width: 80%;
+  height: 50%;
+  margin: 0 10%;
+  margin-top: 40%;
+}
+.left {
+  width: 25%;
+}
+.right {
+  width: 25%;
+}
+.bottomeHomeText {
+  font-size: 1.5vw;
+  margin-top: 1%;
+  color: #592f36;
+  height: 10vh;
+  text-align: center;
+}
+/* statstics */
+.statstics {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.numbers {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  gap: 1rem;
+  text-align: center;
+  width: 90%;
+
+  margin: 5% 5%;
+}
+.numbers:hover {
+  cursor: pointer;
+}
+.number {
+  width: 20%;
+}
+#number {
+  font-size: 4.7vw;
+  font-weight: bold;
+  margin: 0;
+}
+#number:hover {
+  color: #048bbd;
+}
+/* cards */
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  flex-direction: row;
+  width: 100%;
+  gap: 10px;
+  margin: 5% 0;
+}
+.cards:hover {
+  cursor: pointer;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 98%;
+  margin-left: 1%;
+}
+.image1 {
+  display: flex;
+  align-items: end;
+
+  width: 100%;
+  height: 35vh;
+  background-size: contain;
+  background-image: url("https://cdn.discordapp.com/attachments/1236613782013349969/1244999696863203408/t8.jpg?ex=665727d2&is=6655d652&hm=93bb26089ea67301635f7a4d964e2173e5f3111951ed48da1db4e505f96e6379&");
+  /* background-color: rgba(255, 255, 255, 0.5); */
+}
+.image2 {
+  display: flex;
+  align-items: end;
+
+  width: 100%;
+  height: 35vh;
+  background-size: contain;
+  background-image: url("https://cdn.discordapp.com/attachments/1236613782013349969/1244999697282891936/t7.jpg?ex=665727d2&is=6655d652&hm=26aff5fdfb848402680cf4e1b4dd299d1f9c5e4c47a1368bda9eb4154f58e347&");
+  /* background-color: rgba(255, 255, 255, 0.5); */
+}
+.image3 {
+  display: flex;
+  align-items: end;
+
+  width: 100%;
+  height: 35vh;
+  background-size: contain;
+  background-image: url("https://cdn.discordapp.com/attachments/1236613782013349969/1244999696070606909/t10.jpg?ex=665727d2&is=6655d652&hm=f3cb4e724d39ad56d564d6fcf97573d43b7643537547453b57ef79e36a85f87c&");
+  /* background-color: rgba(255, 255, 255, 0.5); */
+}
+.image4 {
+  display: flex;
+  align-items: end;
+
+  width: 100%;
+  height: 35vh;
+  background-size: contain;
+  background-image: url("https://cdn.discordapp.com/attachments/1236613782013349969/1244999696447963136/t9.jpg?ex=665727d2&is=6655d652&hm=e44c17fa987843f9435f62190108c78e95257f9ff0aa58245d27848216d98946&");
+  /* background-color: rgba(255, 255, 255, 0.5); */
+}
+.titleImage1 {
+  background-color: rgba(4, 163, 177, 0.9);
+
+  width: 100%;
+  text-align: center;
+  align-items: end;
+}
+.titleImage2 {
+  background-color: rgba(166, 155, 193, 0.9);
+
+  width: 100%;
+  text-align: center;
+  align-items: end;
+}
+.titleImage3 {
+  background-color: rgba(89, 185, 220, 0.9);
+
+  width: 100%;
+  text-align: center;
+  align-items: end;
+}
+.titleImage4 {
+  background-color: rgba(209, 213, 103, 0.9);
+
+  width: 100%;
+  text-align: center;
+  align-items: end;
+}
+.bottomimage1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  background-color: rgba(89, 202, 211, 0.8);
+}
+.bottomimage2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  background-color: rgba(166, 155, 193, 0.8);
+}
+.bottomimage3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  background-color: rgba(89, 185, 220, 0.8);
+}
+.bottomimage4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  background-color: rgba(209, 213, 103, 0.8);
+}
+.infoLink {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+.infoLink:hover {
+  text-decoration: underline;
+}
+.info {
+  font-weight: bold;
+  color: white;
+}
+/* banner */
+.banner {
+  display: flex;
+  align-items: center;
+  height: 10vh;
+  width: 100%;
+  background-color: #ffa400;
+}
+.banner a {
+  text-decoration: none;
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  font-size: 1.5vw;
+}
+.gridContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  width: 100%;
+  gap: 10px;
+  margin: 3% 0;
+}
+.gridContainer img {
+  height: 100%;
+  width: 100%;
+}
+.cont {
+  text-align: center;
+  margin: 5% 0;
+}
+.donateBtn {
+  background-color: #8c52ba;
+  padding: 1% 2%;
+  border-radius: 10px;
+  border: 0;
+  color: white;
+  margin: 2% 0;
+}
+.cont a {
+  color: #8c52ba;
+}
+
+.footerContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 3fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  background-color: #292f36;
+  height: 30vh;
+  width: 100%;
+}
+
+.item1 {
+  grid-area: 1/2/2 / span 1;
+}
+.item2 {
+  grid-area: 1/3/2 / span 1;
+}
+.item3 {
+  grid-area: 1/4/2 / span 1;
+}
+.item4 {
+  grid-area: 1/5/2 / span 1;
+}
+.item5 {
+  grid-area: 1/6/2 / span 1;
+}
+.item6 {
+  grid-area: 1/7/2 / span 1;
+}
+.item7 {
+  grid-area: 1/8/2 / span 1;
+}
+.item8 {
+  grid-area: 1/9/2 / span 1;
+}
+.item9 {
+  grid-area: 1/10/2 / span 1;
+}
+.selectLanguage {
+  grid-area: 1/12/2/13;
+  display: grid;
+  align-items: end;
+}
+select {
+  width: 100%;
+}
+.footerContainer div a {
+  color: white;
+  text-decoration: none;
+}
+.copyRight {
+  grid-area: 2/2/3/11;
+  color: white;
+  font-size: 0.9rem;
+}
+.amazonLogo {
+  grid-area: 5/6/6/9;
+}
+.amazonLogo img {
+  height: 6vh;
+}
+.footerImages {
+  grid-area: 2/12/3/13;
+  justify-self: center;
+  gap: 10px;
+}
+.footerImages img {
+  height: 6vh;
+  padding-left: 10px;
+}
+/* responsive */
+@media (max-width: 864px) {
+  /* home */
+  .intro {
+    font-size: 2vw;
+  }
+  .subIntro {
+    font-size: 4vw;
+  }
+  .descIntro {
+    font-size: 2.3vw;
+  }
+  .tryBtn {
+    width: 30%;
+  }
+  .learnBtn {
+    width: 30%;
+  }
+  .partner {
+    font-size: 1.7vw;
+  }
+  .amazonImg {
+    width: 32%;
+  }
+  .musicImage {
+    width: 90%;
+    margin: 0 5%;
+    margin-top: 45%;
+  }
+  .bottomeHomeText {
+    font-size: 2vw;
+    margin-top: 1%;
+    color: #592f36;
+    height: 10vh;
+    text-align: center;
+  }
+  .banner a {
+    font-size: 2.4vw;
+  }
+  .cards {
+    grid-template-columns: 1fr 1fr;
+  }
+  .gridContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    width: 100%;
+    gap: 10px;
+    margin: 3% 0;
+  }
+  .footerContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    background-color: #292f36;
+    height: 30vh;
+    width: 100%;
+  }
+  .numbers {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex: 2;
+    justify-content: space-evenly;
+    gap: 1rem;
+    text-align: center;
+    width: 90%;
+    margin: 5% 5%;
+  }
+  .copyRight {
+    grid-area: 3 / 4 / 4 / 13;
+    color: white;
+    font-size: 0.8rem;
+  }
+  .footerImages {
+    grid-area: 2 / 7/ 3 / 12;
+    justify-self: center;
+    gap: 10px;
+  }
+  .selectLanguage {
+    margin: 3%;
+    grid-area: 2/4/3/7;
+    display: grid;
+    align-items: center;
+  }
+
+  .footerContainer div a {
+    text-align: center;
+    font-size: 1.5vw;
+    border-right: 2px solid gray;
+    padding-right: 5px;
+  }
+  .item1 {
+    grid-area: 1/3/2 / span 2;
+  }
+  .item2 {
+    grid-area: 1/5/2 / span 2;
+  }
+  .item3 {
+    grid-area: 1/7/2 / span 1;
+  }
+  .item4 {
+    grid-area: 1/8/2 / span 1;
+  }
+  .item5 {
+    grid-area: 1/9/2 / span 1;
+  }
+  .item6 {
+    grid-area: 1/10/2 / span 1;
+  }
+  .item7 {
+    grid-area: 1/11/2 / span 1;
+  }
+  .item8 {
+    grid-area: 1/12/2 / span 1;
+  }
+  .item9 {
+    grid-area: 1/13/2 / span 1;
+  }
+  .amazonLogo {
+    grid-area: 5/7/6/9;
+  }
+}
+@media (max-width: 710px) {
+  .intro {
+    font-size: 2.5vw;
+  }
+  .subIntro {
+    font-size: 4.4vw;
+  }
+  .descIntro {
+    font-size: 2.7vw;
+  }
+  .tryBtn {
+    width: 40%;
+  }
+  .learnBtn {
+    width: 40%;
+  }
+  .partner {
+    font-size: 2vw;
+  }
+  .amazonImg {
+    width: 40%;
+  }
+  .musicImage {
+    display: none;
+  }
+  .bottomeHomeText {
+    font-size: 2.3vw;
+    margin-top: 1%;
+    color: #592f36;
+    height: 10vh;
+    text-align: center;
+  }
+  .footerContainer div a {
+    font-size: 1.8vw;
+  }
+}
+@media (max-width: 526px) {
+  .intro {
+    font-size: 3.3vw;
+  }
+  .subIntro {
+    font-size: 6.4vw;
+  }
+  .left {
+    width: 10%;
+  }
+  .right {
+    width: 10%;
+  }
+  .middleText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+  }
+  .descIntro {
+    font-size: 3.7vw;
+  }
+  .partner {
+    font-size: 3vw;
+  }
+  .bottomeHomeText {
+    font-size: 3.3vw;
+  }
+  .numbers {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 1rem;
+    text-align: center;
+    width: 90%;
+    margin: 5% 5%;
+  }
+  .number {
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    width: 100%;
+  }
+  #number {
+    font-size: 10vw;
+    font-weight: bold;
+    margin: 0;
+  }
+  .footerContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    background-color: #292f36;
+    height: 36vh;
+    width: 100%;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+  }
+  .item1 {
+    grid-area: 1/4/2 / span 2;
+  }
+  .item2 {
+    grid-area: 1/6/2 / span 2;
+  }
+  .item3 {
+    grid-area: 1 / 8 / 2 / span 2;
+    margin-left: auto;
+  }
+  .item4 {
+    grid-area: 1/10/2 / span 2;
+    margin-left: auto;
+  }
+  .item5 {
+    grid-area: 1/12/2 / span 2;
+    margin-left: auto;
+  }
+  .item6 {
+    grid-area: 2/5/3 / span 2;
+    margin-left: auto;
+  }
+  .item7 {
+    grid-area: 2/7/3 / span 2;
+    margin-left: auto;
+  }
+  .item8 {
+    grid-area: 2 / 9 / 3 / span 2;
+    margin-left: auto;
+  }
+  .item9 {
+    grid-area: 2 / 11 / 3 / span 2;
+    margin-left: auto;
+  }
+  .selectLanguage {
+    margin: 3%;
+    grid-area: 3 / 4 / 4 / 7;
+    display: grid;
+    align-items: center;
+  }
+  .footerImages {
+    grid-area: 3 / 7 / 4 / 12;
+    justify-self: center;
+    gap: 10px;
+  }
+  .copyRight {
+    grid-area: 4 / 4 / 5 / 13;
+    color: white;
+    font-size: 0.8rem;
+  }
+  .footerImages {
+    grid-area: 4 / 7 / 5 / 13;
+    justify-self: center;
+    gap: 10px;
+  }
+  .selectLanguage {
+    margin: 3%;
+    grid-area: 4 / 4 / 5 / 7;
+    display: grid;
+    align-items: center;
+  }
+  .copyRight {
+    grid-area: 5 / 4 / 6 / 13;
+    color: white;
+    font-size: 0.8rem;
+  }
+  .amazonLogo {
+    grid-area: 7/6/8/9;
+  }
+}

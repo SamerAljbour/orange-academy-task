@@ -1,0 +1,20 @@
+.divOne div{
+    display: inline-block;
+    width: 150px;
+    text-align: center;
+    border: 2px black solid;
+    border-radius: 10px;
+    font-size: 25px;
+    margin: 10px;
+    box-shadow: 3px 4px 5px  rgba(0, 0, 0, 0.60);
+}
+.divTwo div{
+    display: inline-block;
+    width: 150px;
+    text-align: center;
+    border: 2px black solid;
+    border-radius: 10px;
+    font-size: 25px;
+    margin: 10px;
+    box-shadow: 3px 4px 5px  rgba(0, 0, 0, 0.60);
+}

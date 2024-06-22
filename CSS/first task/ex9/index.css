@@ -1,0 +1,21 @@
+body{
+    background-color: #ffffcc;
+}
+table{
+    margin-left: auto;
+    margin-right: auto;
+    border-spacing:0px;
+}
+#paraStyle{
+    background-color: #ffffff; 
+    height: 600px;
+    width: 600px;
+    
+}
+#liStyle{
+    background-color: #e3e3e3;
+    width: 200px;
+    vertical-align: top;
+}
+
+  

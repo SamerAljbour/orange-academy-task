@@ -1,0 +1,177 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+.splitter {
+    display: flex;
+    align-items: center;
+    margin-top: 1%;
+    width: 100%;
+}
+.companyName{
+    text-align: center;
+    margin-top: 10%;
+    margin-left: 50%;
+    width: 100%;
+    font-size: 1.6rem;
+}
+.dashbord{
+    background-color: #272c4a;
+    width: 25%;
+    height: 103vh;
+}
+.content{
+    width: 75%;
+    height: 103vh;
+    background-color: #1b203d;
+}
+.iconImg{
+    width: 19%;
+    margin:3%;
+
+}
+.divItem {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start  ;
+    flex-wrap: wrap;
+    margin-left: 30px;
+    margin-top: 10%;
+    color: white;
+    width: 149%;
+}
+.items{
+    width: 45%;
+    text-align: center;
+
+
+}
+.divItem:hover{
+    background-color: #1b203d;
+}
+p{
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+ 
+/* nav bar */
+.left{
+    display: flex;
+    align-items: center;
+    width: 21%;
+}
+.right{
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+    width: 21%;
+}
+.profileimg {
+    width: 30%;
+    height: 8vh;
+    border-radius: 50%;
+    margin-right: 10%;
+}
+.burgerIcon {
+    width: 10%;
+    height: 9vh;
+}
+.name{
+    font-size: 0.8rem;
+    color: white;
+}
+.field{
+    font-size: 0.6rem;
+}
+/* bottom contant */
+/* cards */
+.containerForStatics{
+    display: flex;
+    flex-direction: column;
+
+    width: 94%;
+    height: 12vh;
+    margin-left: 3%;
+    margin-top: 9%;
+
+}
+.top{
+    display: flex;
+    flex-direction: row;
+    gap: 3%;
+}
+.itemCard{
+    display: flex;
+    flex-direction: row;
+    background-color: #272c4a;
+    width: 23%;
+    height: 15vh;
+    align-items: center;
+    gap: 20px;
+
+}
+b{
+    color: white;
+    font-size: 1.3rem;
+}
+.itemDesc{
+    color: #7d7f7d;
+}
+.cardTxt{
+    margin-left: 10%;
+    
+}
+/* bottom the table */
+.bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.bottomLeft{
+    background-color: #272c4a;
+    height: 39vh;
+    width: 65%;
+    margin-top: 7%;
+}
+button{
+    width: 75%;
+}
+.title{
+    display: flex;
+    height: 8vh;
+    align-items: center;
+    background-color: #272c4a;
+
+}
+.left{
+    width: 50%;
+    color: white;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+    height: 10rem;
+    color: white;
+    text-align: left;
+}
+.cardIcon{
+    width: 30%;
+}
+
+tr {
+    border-bottom: 1px solid #ddd;
+}
+.bottomRight{
+    width: 25%; 
+    height: 39vh;
+    margin-top: 7%;
+}
+#number{
+    display: flex;
+    width: 100%;
+    height: 31vh;
+    align-items: center;
+    justify-content: center;
+}

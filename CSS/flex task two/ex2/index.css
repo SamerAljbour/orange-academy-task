@@ -1,0 +1,39 @@
+.mainDiv{
+    display: flex;
+    gap: 2em;
+    justify-content: center;
+    align-items: center;
+    margin-left: 2em;
+    
+}
+.contentDiv{
+    width: 100%;
+    height: 90vh;
+}
+.innerTXT{
+    display: flex;
+    gap: 2em;
+    justify-content: left;
+    
+}
+.smallLine{
+    display: inline-block;
+    height: 0.3em;
+    width: 20px;
+    background-color: #1ba4da;
+    border-radius: 10px     ;
+}
+.largeLine{
+    display: inline-block;
+    height: 0.3em;
+    width: 6em;
+    background-color: #1ba4da;
+    border-radius: 10px 
+}
+button{
+    text-decoration: none;
+    background-color:#1ba4da;
+    border: 0; 
+    color: white; 
+    padding:1em 3em;
+}

@@ -1,0 +1,25 @@
+body{
+    background-color: #e0e0e0;
+}
+div{
+    display: inline-block;
+    background-color: white;
+    height: 200px;
+    width: 200px;
+    margin: 20px;
+}
+#boxSix{
+    box-shadow: 0px 10px 16px 0 rgba(0, 0, 0, 0.29), 0px 10px 40px 0 rgba(0, 0, 0, 0.29);
+}
+#boxFive{
+    box-shadow: 0px 10px 16px 4px rgba(0, 0, 0, 0.20), 0px 10px 40px 4px rgba(0, 0, 0, 0.19);
+}
+#boxFour{
+    box-shadow: 0px 10px 10px 0 rgba(0, 0, 0, 0.15), 0px 10px 40px 0 rgba(0, 0, 0, 0.14);
+}
+#boxThree{
+    box-shadow: 0px 10px 16px 0 rgba(0, 0, 0, 0.12), 0px 10px 40px 0 rgba(0, 0, 0, 0.11);
+}
+#boxTwo{
+    box-shadow: 0px 10px 16px 0 rgba(0, 0, 0, 0.08), 0px 10px 40px 0 rgba(0, 0, 0, 0.07);
+}

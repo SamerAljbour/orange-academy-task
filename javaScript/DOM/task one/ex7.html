@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #imageShow {
+        border: 1px solid black;
+        height: 400px;
+        width: 600px;
+        display: flex;
+      }
+      img {
+        height: 100%;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <select name="country" id="countrySelect">
+      <option value="" disabled selected>Select a country</option>
+      <option value="jordan">Jordan</option>
+      <option value="iraq">Iraq</option>
+      <option value="syria">Syria</option>
+    </select>
+    <div id="imageShow"></div>
+    <script>
+      document
+        .getElementById("countrySelect")
+        .addEventListener("change", (event) => {
+          const country = event.target.value;
+          const imageShowDiv = document.getElementById("imageShow");
+          imageShowDiv.innerHTML = "";
+
+          let imgUrl = "";
+
+          if (country === "jordan") {
+            imgUrl =
+              "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAABkCAMAAAD0WI85AAAAolBMVEUAAAAAej3OESb///8AbSDLy8vL2MwAfD3NABnSECfSCSXMABXLAAAAfz5KBg6tDSDYXWTxy8xYCBDMAAn01tn78PHZACStMSxKaTldZTdTBw+zDiFdCBHZESioDh/NDCDaaW3bcnX34OLUSU60LSupNy2wHyzHpafN09PqsLTXVF3ROD/TO0fkl5rtv7/ln6Lgg4jPKS7QJTWxQzjHtqpVZzh6gIoQAAAC/klEQVR4nN2ZW1ubQBBAcWgbWGiNBZpYG0lItEq00bT+/7/WXXPZJIbLDnzsDOfJBx5yvtkDu6tz+93pB75/+c32b2gFAH9y+dP2r2gBkPj+DX8VeMcXt9wXGGyRC+yX7d/SCNjDPHs4QE6F78sYjpDZc50KnOALpi/jUxG22X8UYfoyPifCcirnRaQKMMu+SITdHqxYRLVyw+e7Uiaivitssi8XYZR9lYjKnsUerFqESfZ1RFgcveqJMPja1xUhn319EeJHLxMR0tmbiRA+epmKkM3eXIRo9hgRknswnAjBGxesCLmjF16E2I1LE5H3oxeV7JuJKJX73w8Pn63TWARAhNMr1zotiAAE6TDuhQiAF04tq7QkIlUCu1NpTUSqRDOLKi2KqAU2tJZ9qyIye89WKy2L2Mu+QiRFqASejezLRYLZ1EOoeGH32ReLpHIaYfYYbf4yVuk6+0KRNF8GYe4mYRQ8zRErLAi6baVQxBu68fMf112tEneNSUVl3+FUipdW9Lh75iXCeIDag+WdTaWkkSDZPHKF6X1Ld9mXTGS+FYnnId5EquSdLLBCkWi1fyZ5CfiKpKss2YtkM+zqIrC0BCzzTD0RL5dICyKxQ7pM3CRxM2whVF6/kM6T+FUWjxMh80GUItP41YvyBCNCaIsiWXvyi+6tMRqUNo07jLcnFLfxCIgerEzpyVG3J5cPPbkO6skFXU+uTHtyid2TfysI8fffFwI0FBGT0fXgEwUaiYjJ3fjr4IIEDUQELMYXRDQaiIgfozcq01AgRYSgs6g2oETkNK4HpDRQIvSmoTAWET6lxDWGItQS1xiJCH9EcFFtMBChmLimtgjNxDU1RYRYvNGdhqKWCN3ENTVEBIzGtKehqBRRiVOfhqJChHrimlIR+olrSkQ4JK4p+Y/VgkHimgIRLolrzorwSVxzRoT2nqqIDyKUbkZMOBGhemyq5kiE1wv3mAMRjolrnINpMExc4/RhGgpnlzjnaSgc3olrHHUzwn0aCueOzUa9nP83ApZrbBDgEwAAAABJRU5ErkJggg==";
+          } else if (country === "iraq") {
+            imgUrl =
+              "https://cdn.britannica.com/40/115240-050-7551FC2D/flag-Iraq-2008.jpg";
+          } else if (country === "syria") {
+            imgUrl =
+              "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPAAAACgCAMAAAAFBRFXAAAAflBMVEUAAADOESb///8Aej3LAADwyszLy8sAdjRNlmoAeDkAdDH1+fcAcSoAcCcAbiTn7+qvzLoAbR4AaBHF2s57qYqPs5hwnHdfmnI3h1SpxbLX5dwng0260ME+j2AUci1loXtAhE+dxK4hfkRPjmAfeTpvp4WauqIAZQCBsZRGjFvVK16RAAADw0lEQVR4nO2aaZOiMBRFHTMzMQRkVQS0VVTU//8HR3CphtZeyK3prnjPR6u8nUMeL4s9+PVkDL57AP8bCtsOhW2HwrZDYduhsO1Q2HYobDsUth0K2w6FbYfCtkNh26Gw7VDYdihsOxS2HQrbDoVth8K2Q2HbobDtUNh2KGw7FLYdCtvO4PeTMfjzZAyGTwaFbYfCtkNhQ2Ifm+fH2Dy48CTA5gUTbB5aWE9TDc1Lp9A8uHA8i6A17UczcE2DhTMvgtZ0EHkZMg8trBPXGSEDR46bYGsaK5wXSkTAAepIqCLH5Q3RwvNQiBBY00GdN8flDcHC+uAKIRe4wIUUAlzTUGFfKiHEC2yA+uUUpyS070OF59FpgMKB9dXMqfMiaE1DhZfNAGWKyktl8wCXqLwapLAO64oWagWqQX91zguRLzFSOG4qWqgSVNNZ2QiLCLnZQgqnTUWfajDB5CXXPNg7MjQTXh9HLc7zUU9x+/NZ9qma1Nms/b3yFtj+/Lg2GLTRDAehK18hbrz+1Nt+eicSbL2P81yznY1ZSeuFVOJdlEy/sDX004/zFmYtzPQdnpTOe+Nztl88wE+27+eVphcCxk1rvnEfToryNl8uv2DjPc5zN8abEPMunSePRqicpMdJJ08ePUHl9cnrAFiW9DyU98bnbD/Xnd/kre+XtQwDwA4Esg77Zfh2fF7/g2xeeG/zwhKygcNsPHQy7pZhuDMJ3HWfoBqDTomonVYg2sZjw2uAYNz2FahrBZRwXLaFTS8v/agtXKL20yjhqj0jwjuY5R06b/G4wowTJeynncaqpFlgd8flpKAzJ0g4dztNRuyNlsx8381zQZeXIOHs2lVvM2NW07eKVtclPgQdskHL0ug8LuUeC0dd2oxJ4KUFKqc4XvZdcvSTlqVLT1XqoIfJ9iy/NajBfHuWlMlQT9Tl3gPzEmOEq6ai3WOzWAarZlKUQU0f1LlcmpN+cGwaRIjp0xjhQtZ3bdPLnOa7uqzlpn/eps5zlte8aX07KAvzcQ5Re+lTT3VEdXvJdHU6Jaui914hLtTp6FHdalhXp3ix/zl76fVYjI8tvXjmCdn7rD6Rwp3Fr5tUfDz9CZOrrBsQ4VKOd53Hr5d7p++P93rq7Jed7/q70Cn7xbVBCPvhy52Hn0V9azouojuLbvYSImoaIXxY3V2B8qJnX63un6TzleH+vAEhXD0oXb/fDYUOHsykRixM/Mc026Gw7VDYdgZ/n4wBIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEII+X7+Aajoxz4nPX+DAAAAAElFTkSuQmCC"; // Replace with the actual URL of the image for Syria
+          }
+
+          if (imgUrl) {
+            const img = document.createElement("img");
+            img.src = imgUrl;
+            imageShowDiv.appendChild(img);
+          }
+        });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,13 @@
+#outterTable{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+.innerTableStyle{
+    border: 1px solid black;
+    margin: 10px;
+
+}
+.celllsBorder{
+    border: 1px solid black;
+}

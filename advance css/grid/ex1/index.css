@@ -1,0 +1,226 @@
+*{
+    margin: 0;
+    padding:0 ;
+    box-sizing: border-box;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.top{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr  1fr;
+    grid-template-rows: 1fr 1fr  ;
+    height: 80vh;
+}
+.leftImage{
+    background-image: url("https://img.freepik.com/free-photo/close-up-side-view-smiling-businessman-eyeglasses_171337-5607.jpg?w=740&t=st=1716833587~exp=1716834187~hmac=b33222ae068766bbadb7b6aec8cf1189e982654cf1b9551749f56e8ed26462ad");
+    height: 100%;
+    width: 100%;
+    grid-area: 1/1/3/3;
+    box-shadow: inset 300px 0 100px -56px rgba(0, 0, 0, 0.8);
+}
+.tvPic{
+    width: 100%;
+    height: 100%;
+    grid-area: 1/3/2/4;
+}
+
+.personPic{
+    width: 100%;
+    height: 100%;
+    grid-area: 2/4/3/5;
+}
+.greenWall{
+    position: relative;
+    background-image: url(green\ wall.jpg);
+    width: 100%;
+    height: 100%;
+    grid-area: 2/3/3/4;
+}
+.greenWall::after{
+    content: "";
+    position: absolute;
+    border: 20px solid ;
+    border-color: transparent transparent transparent #204b1d;
+    top:5%;
+    right: -12%;
+}
+.blueWall{
+    position: relative;
+    background-image: url(bluewall.jpg);
+    width: 100%;
+    height: 100%;
+    grid-area: 1/4/2/5;
+
+}
+.blueWall::before{
+    content: "";
+    position: absolute;
+    border: 20px solid ;
+    border-color: transparent #2b83e3 transparent transparent;
+    top:5%;
+    left: -11%;
+}
+
+.innerTXT{
+    margin-left: 7%;
+}
+.picTitle{
+    font-weight: bold;
+    font-size: 2.3vw;
+    padding: 5% 0;
+    color: white;
+}
+.picDesc{
+    font-size: 1vw;
+    padding: 5% 0;
+    color: white;
+}
+.text{
+    color: orange;
+    width: 60%;
+    margin-top: 5%;
+    margin-left: 10%;
+
+}
+.bottomtxt{
+    position: absolute;
+    bottom: 10%;
+}
+.whiteLine{
+    width: 25%;
+    height: 0.5vh;
+    background-color: white;
+    border-radius: 10%;
+    margin: 5% 0;
+}
+.txt{
+    color: white;
+    font-size: 1.1vw;
+    font-weight: bold;
+}
+.text > p{
+    padding-top: 3%;
+    padding-bottom: 2%;
+}
+.offersSmall {
+    font-size: 1.3vw;
+    font-weight: bold;
+    color: #FF7703;
+}
+.offersBig{
+    font-size: 4.5vw;
+    font-weight: bold;
+    color: #FF7703;
+}
+.stayText{
+    font-size:2.5vw;
+    font-weight: bold;
+    color:white;
+}
+.bestText{
+    font-size:1.8vw;
+    color:white;
+}
+.bottom{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr  1fr;
+    background-color: #fbfbfb;
+    height: 20vh;
+    width: 100%;
+
+    align-items: center;
+
+}
+.item1{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 95%;
+    margin-left: 2.5%;
+    height: 15vh;
+    background-color: #ff7900;
+}
+.bottom > div{
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.6);
+}
+
+.item2{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 95%;
+    margin-left: 2.5%;
+    height: 15vh;
+    background-color: white;
+    border-bottom: 5px solid #4fc088;
+    
+}
+.item3{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 95%;
+    margin-left: 2.5%;
+    height: 15vh;
+    background-color: white;
+    border-bottom: 5px solid #4eb5dc;
+    
+}
+.item4{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 95%;
+    margin-left: 2.5%;
+    height: 15vh;
+    background-color: white;
+    border-bottom: 5px solid #a686d3;
+    
+}
+.item5{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 95%;
+    margin-left: 2.5%;
+    height: 15vh;
+    background-color: white;
+    border-bottom: 5px solid #fdb5e3;
+    
+}
+.innerText1{
+    display: grid;
+    align-items: center;
+    grid-area: 1/2/2/4;
+    font-weight: bold;
+    color: white;
+}
+.innerText{
+    display: grid;
+    align-items: center;
+    grid-area: 1/2/2/4;
+    font-weight: bold;
+    color: black;
+}
+.imageIcon1{
+    margin-left: 10%;
+    width: 80%;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 10%;
+    background-color: #ff922e;
+    border: 1px solid #fcb827;;
+}
+.imageIcon1{
+    margin-left: 10%;
+    width: 80%;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 10%;
+    background-color: #ff922e;
+    border: 1px solid #fcb827;;
+}
+.imageIcons{
+    margin-left: 10%;
+    width: 80%;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 10%;
+    background-color: #f5f5f5;
+
+}
+
