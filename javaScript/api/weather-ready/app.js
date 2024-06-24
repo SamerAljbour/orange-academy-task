@@ -34,8 +34,9 @@ function fetchCityWeather(cityValue) {
             country.textContent = `${cityValue} ,${data.sys.country}`
             showDate.textContent = `${day} ${month} ${year}`
             dateDayName.textContent = `${dayName}`
+        }).catch(err => {
+            throw Error(" Error : " + err)
         })
-
 }
 window.onload = () => {
     fetchCityWeather(cityValue);
