@@ -7,9 +7,7 @@ let weatherDesc = document.querySelector(".weather-desc")
 let country = document.querySelector(".location")
 let showDate = document.querySelector(".date-day")
 let dateDayName = document.querySelector(".date-dayname")
-let ammanCity = document.getElementById("amman")
-let parisCity = document.getElementById("paris")
-let londonCity = document.getElementById("london")
+
 var cityValue = "Paris";
 const months = ["Jan", "Febr", "Mar", "Apr", "May", "June", "July", "Aug", "Sep", "Oct", "Nov", "Dec"];
 const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
