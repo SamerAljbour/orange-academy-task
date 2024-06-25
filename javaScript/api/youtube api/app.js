@@ -18,7 +18,7 @@ function createVideo(videoData) {
     let newVideo = document.createElement("div");
     newVideo.className = "card";
     newVideo.innerHTML = `
-        <a href="">
+        <a href="https://www.youtube.com/watch?v=${videoData.id.videoId}">
             <img src="${videoData.snippet.thumbnails.default.url}" alt="" class="youtubeImage" width="100px" height="100px" />
         </a>
         <p class="imageDesc">${videoData.snippet.title}</p>
