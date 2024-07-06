@@ -7,14 +7,16 @@ let weatherDesc = document.querySelector(".weather-desc")
 let country = document.querySelector(".location")
 let showDate = document.querySelector(".date-day")
 let dateDayName = document.querySelector(".date-dayname")
-
 var cityValue = "Paris";
 const months = ["Jan", "Febr", "Mar", "Apr", "May", "June", "July", "Aug", "Sep", "Oct", "Nov", "Dec"];
 const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 let date = new Date()
 let day = date.getDate(), month = months[date.getMonth()], year = date.getFullYear(), dayName = days[date.getDay()]
-citySelect.addEventListener("change", () => {
+
+citySelect.addEventListener("change", function () {
+
     cityValue = citySelect.value
+    console.log(cityValue)
     fetchCityWeather(cityValue)
 
 })
