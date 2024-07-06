@@ -93,18 +93,19 @@ button.addToCart {
 button.addToCart:hover {
   background-color: #0056b3;
 }
-.clotheingConatiner {
-  width: 100%;
-}
-.ElectronicsContainer {
-  width: 100%;
-}
+.clotheingConatiner,
+.ElectronicsContainer,
 .HomeConatiner {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
   width: 100%;
 }
+
 .titleOfCat {
   font-weight: bold;
   font-size: 20px;
+  width: 300px;
 }
 .seeMore {
   font-weight: lighter;
