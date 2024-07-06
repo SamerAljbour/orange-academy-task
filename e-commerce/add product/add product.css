@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 * {
   margin: 0;
   padding: 0;
@@ -62,3 +63,69 @@ button.submitButton:hover {
   font-size: 14px;
   margin-bottom: 10px;
 }
+=======
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f5f5f5;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid gray;
+  padding: 20px;
+  width: 600px;
+  background-color: #fff;
+  border-radius: 8px;
+}
+
+input,
+textarea,
+select {
+  margin-bottom: 10px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+input[type="file"] {
+  padding: 0;
+}
+
+button.submitButton {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button.submitButton:hover {
+  background-color: #0056b3;
+}
+
+.validProductName,
+.validProductDescription,
+.validProductPrice,
+.validImageInput {
+  color: red;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+>>>>>>> a8efaed4831c765300f139e0d6933aef02ec20eb
