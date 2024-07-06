@@ -1,0 +1,72 @@
+.cardContainer {
+  display: flex;
+  flex-wrap: wrap; /* Allows the cards to wrap onto multiple lines */
+  gap: 20px; /* Adds space between the cards */
+  /* Centers the cards horizontally */
+}
+
+/* Product Card */
+.productCard {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 250px; /* Limit the width of each card */
+  border: 1px solid #ddd; /* Light gray border for a subtle look */
+  border-radius: 8px; /* Rounded corners */
+  overflow: hidden; /* Ensures that content does not overflow */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Light shadow for a subtle lift effect */
+  background-color: #fff; /* White background for a clean look */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+}
+
+.productCard:hover {
+  transform: translateY(-5px); /* Slight lift effect on hover */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+}
+
+/* Product Image */
+.productImage {
+  width: 100%; /* Full width of the card */
+  height: auto; /* Maintains aspect ratio */
+  object-fit: cover; /* Ensures image covers the area */
+}
+
+/* Product Title */
+.productTitle {
+  font-size: 1.2em; /* Larger font size for the title */
+  font-weight: bold; /* Bold text for emphasis */
+  margin: 10px; /* Margin around the title */
+  text-align: center; /* Center text */
+}
+
+/* Product Description */
+.productDesc {
+  font-size: 0.9em; /* Slightly smaller font size */
+  color: #555; /* Dark gray color for the description */
+  margin: 0 10px 10px; /* Margin around the description */
+  text-align: center; /* Center text */
+}
+
+/* Product Price */
+.productprice {
+  font-size: 1.1em; /* Slightly larger font size for price */
+  font-weight: bold; /* Bold text for the price */
+  color: #333; /* Darker color for better visibility */
+  margin: 0 10px 10px; /* Margin around the price */
+  text-align: center; /* Center text */
+}
+button.removeFromCart {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  width: 100%;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: auto;
+}
+
+button.removeFromCart:hover {
+  background-color: #0056b3;
+}

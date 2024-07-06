@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add Product</title>
+    <link rel="stylesheet" href="add product.css" />
+  </head>
+  <body>
+    <form>
+      <input type="text" class="productName" placeholder="Product Name" />
+      <div class="validProductName"></div>
+
+      <textarea
+        class="productDescription"
+        placeholder="Product Description"
+      ></textarea>
+      <div class="validProductDescription"></div>
+
+      <input type="text" class="productPrice" placeholder="Product Price" />
+      <div class="validProductPrice"></div>
+
+      <select class="selectCat">
+        <option value="" disabled selected>Select Category</option>
+        <option value="Electronics">Electronics</option>
+        <option value="Clothing">Clothing</option>
+        <option value="Home">Home</option>
+      </select>
+
+      <input type="file" class="imageInput" />
+      <div class="validImageInput"></div>
+
+      <button type="submit" class="submitButton">Add Product</button>
+    </form>
+
+    <script src="add product.js"></script>
+  </body>
+</html>
