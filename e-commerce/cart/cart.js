@@ -10,28 +10,26 @@ window.onload = () => {
     }
     cardContainer.addEventListener("click", (e) => {
         if (e.target.classList.contains("removeFromCart")) {
-            console.log("entered contains")
+
             let productCard = e.target.closest(".productCard")
+
             if (productCard) {
                 let productId = productCard.getAttribute("id");
                 console.log(productId + " id")
                 let product = products.find(p => p.id == productId)
                 if (product) {
-                    // product.remove()
                     for (let i = 0; i < products.length; i++) {
                         console.log("entered for")
-                        // console.log(productId)
                         console.log(product.id)
-
                         if (productId == product.id) {
                             products.splice(i, 1)
                             console.log(products)
                             console.log("entered if")
                             localStorage.setItem("saved products", JSON.stringify(products))
+                            productCard.remove()
                             break
                         }
                     }
-                    window.location.reload()
 
                 }
             }
