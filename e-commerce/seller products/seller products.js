@@ -59,6 +59,7 @@ cardContainer.addEventListener("click", (e) => {
             console.log(productID)
             let productToUpdate = products.find(p => p.id == productID)
             localStorage.setItem("update product", JSON.stringify(productToUpdate));
+            window.location = `./update product/update product.html`
         }
     }
 })
