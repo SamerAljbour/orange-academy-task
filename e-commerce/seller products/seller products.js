@@ -50,3 +50,15 @@ cardContainer.addEventListener("click", (e) => {
         }
     }
 })
+// update product
+cardContainer.addEventListener("click", (e) => {
+    if (e.target.classList.contains("update")) {
+        let productCard = e.target.closest(".productCard")
+        if (productCard) {
+            let productID = productCard.getAttribute("id");
+            console.log(productID)
+            let productToUpdate = products.find(p => p.id == productID)
+            localStorage.setItem("update product", JSON.stringify(productToUpdate));
+        }
+    }
+})
