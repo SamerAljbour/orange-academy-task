@@ -2,9 +2,23 @@ let cardContainer = document.querySelector(".cardContainer");
 let clotheingConatiner = document.querySelector(".clotheingConatiner");
 let ElectronicsContainer = document.querySelector(".ElectronicsContainer");
 let HomeConatiner = document.querySelector(".HomeConatiner");
+let search = document.querySelector(".search");
+let inputSearch = document.querySelector(".inputSearch");
 let products = JSON.parse(localStorage.getItem("products")) || [];
 let savedproducts = JSON.parse(localStorage.getItem("saved products")) || [];
+inputSearch.addEventListener("click", () => {
+    window.location = `./search.html`
+})
+search.addEventListener("input", () => {
+    console.log("entered search")
+    products.filter(p => {
 
+        if (p.productName.startsWith(search.value)) {
+            createProduct(p.productName, p.productPrice, p.productDesc, p.imageUrl, p.id, p.typeOfCat);
+        }
+    }
+    )
+})
 function createProduct(name, price, desc, image, id, cat) {
     console.log(cat)
     const product = document.createElement("div");
